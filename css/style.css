@@ -1,0 +1,438 @@
+/* Ye humne css reset ki hai. */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Ab main body ko style duga uske leye */
+body{
+    scroll-behavior: smooth; /*Eske help se kya hoga jaise hi maine suppose about pr click kiya
+    to wo about pr chle jaayege usse page ki eske help se.*/
+
+    /* Font family de rha hu neche dekhe kaise. */
+    font-family: 'Roboto', sans-serif;
+
+    
+}
+/* Ab main kya kruga main ek variable bnauga or fr usme color duga jo root name ki class ki 
+under usse kya hoga saare color puri webpage mein use kr sekte hai.
+Hum without variable bnaye bhi bhi color de sekte hai bt wo fr sb jgha baar baar dena pdega to 
+esliye hum ek saath ek hi jgha de rhe hai neche dekhe kaise.*/
+:root{
+    --primary:indianred;
+    --secondary:rgba(15, 10, 29, 0.849);
+    --light:#2f3640;
+}
+/* Ab main kya kruga header ki leye style kruga.Neche dekhe.*/
+header{
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* Yha se Humne nav1 ki leye Style kiya tha. */
+/* Ab hum nav1 ko style dege neche dekhe kaise. */
+.nav1{
+    width: 100%;
+    height: 80px;
+    display:flex ;
+    justify-content: space-around; /*Ese kya hota hai jo lekha hua hai na humare nav1 mein usme 
+                                    dono side brabar brabar space aajata hai.*/
+    align-items: center;  /*Ese humare jo lekha hua hai na wo center mein aagya hai uper ki side se*/
+    flex-wrap: wrap;
+    box-shadow: 2px 0px 3px gray; /*Eska use krne se humare jo text lekha hua tha or link the uske
+    aas paas shad aagye mtlb line type ka aagya hai aisa lg rha hai jaise box ho.*/
+    text-align: center; /*Eska use esliye kiya hai jo text lekha hua hai beach mein rhe hai esliye.*/
+}
+/* Ab hum neche kya krege nav1 ki under jo left vaale div hai usko style krege neche dekhe. */
+.nav1 .left{
+    flex-basis: 50%;
+    letter-spacing: 2px;
+    
+}
+/* Ye kya kr rhe hum ye wo hai jo humne registation or login vaala hai uske style wo left ki under
+anchor tag mein hai naa a element name se. */
+.nav1 .left a{
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: bold;
+    margin: 0px 5px;
+}
+/* Ab hum neche kya krege nav1 ki under jo right vaale div hai usko style krege neche dekhe. */
+.nav1 .right{
+    flex-basis: 50%;
+}
+/* Ab hum kya krege right ki under i tag ki under jo icon hai unko style dege neche dekhe. */
+.nav1 .right i{
+    font-size: 20px;
+    margin: 0px 15px;
+    background-color: var(--primary);
+    color: white;
+    padding: 4px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out; /*Or eska use neche jo condition de hai hover mein transform 
+    vaale uske saath mel kr kaam krna hai.*/
+}
+/* Ab hum kya krege jo ye neche hai ki hover eska use kr ki main kya kruga jaise mera cursor icon
+pr jaayega to wo rotated hoga jitna main usko boluga to uske leye ye transform ka use kiya hai.
+Neche dekhe. */
+.nav1 .right i:hover{
+    transform: rotate(360deg);
+    
+}
+/* Or yha pr humare nav1 ki style puri Hue. */
+
+
+
+/* Ab Hum yha se Nav2 ki Style krege. */
+/* nav2 ki leye style kruga. */
+.nav2{
+    width: 100%;
+    height: 120px;
+    display:flex ;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+/* Ab hum yha pr nav2 left ki leye style krege neche dekhe. */
+.nav2 .nav2-left{
+    flex-basis: 30%;
+    margin: auto;
+    cursor: pointer;
+    
+}
+/* AB main kya kruga yha pr jo nav2 left hai uske i tag vaale ki leye style kruga neche dekhe.*/
+.nav2 .nav2-left i{
+    margin-left: 15px;  /*Ye esliye kiya wo kya tha jo humare mobile no or email ek jgha ho rha tha.*/
+}
+
+
+
+
+
+/* Ab hum yha pr nav2 center ki leye style kr rhe hai neche dekhe. */
+.nav2 .nav2-center{
+    flex-basis: 30%;
+    margin: auto;
+    cursor: pointer;
+}
+/* Ab main kya kruga yha pr jo nav2 center hai uske under jo h1 hai or paragraph hai uske leye
+style kruga.*/
+.nav2 .nav2-center h1{
+    color: var(--primary);
+    font-size: 2rem;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+/* Ab mujhe kya krna hai jo nav2 center hai uske under jo h1 hai or paragraph to maine jo logo tha
+wo aise deya tha half to h1 ki under hi or half span ki under to ab main span ko style kr ki usko
+multicolor duga dekhe neche kaise.*/
+.nav2 .nav2-center h1 span{
+    color: var(--secondary);
+}
+/* Ab hum kya krege jo neche lekha hua hai logo ki everything kr ki usko thek krte hai or wo kisme
+hai p tag ki under.Neche Dekhe Kaise krege. */
+.nav2 .nav2-center p{
+    color: grey; /*ye jo color deya hai humne khud se deya hai vrna saare color uper humne variable 
+    bna kr use kr rhe hai.*/
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+/* bhaviyshya  */
+
+
+/* Ab yha pr hum nav2 right ki leye style krege neche dekhe. */
+.nav2 .nav2-right{
+    flex-basis: 30%;
+    margin: auto;
+    cursor: pointer;
+}
+/* Ab maine kya kiya hai jo nav2 center tha uske jo i tag the uske style ki hai mtlb jo logo tha 
+usko thek kiya hai. */
+.nav2 .nav2-right i{
+    margin: 0px 5px;
+}
+/* Or yha pr humare nav2 ki style puri Hue. */
+
+
+
+
+
+/* Ab hum nav3 ki style krege yha se neche dekhe */
+/* Ab hum sbse phle nav3 jo class hai usko style krege Neche dekhe kaise. */
+.nav3{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    
+}
+/* Ab hum nav3 ki jo ul hai usko style krege neche dekhe. */
+.nav3 ul{
+    list-style: none;
+    text-align: center;
+    
+}
+/* Ab hum es nav3 ki under jo list items hai unko style krege dekhe neche. */
+.nav3 ul li{
+    display: inline-block;
+    width: 150px;
+    /* Es list items ki under hume position set krne pd rhe hai bcoz jo humne toys ki menu 
+    mtlb dropdown bnaya hai wo thek se nhi aarha hai uske leye ye krna hai Neche dekhe. */
+    position: relative;
+    z-index: 99;
+    /* ye sb jo kra position or index ye krne ki baad bhi koi change nhi hoga itna eske leye kya
+    kruga main neche jo dropdown ki ul hai usko style krna pdega dekhte hai neche. */
+}
+/* Ab hum jo anchor tag ki under items hai unko style krege. */
+.nav3 ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    display: block;
+}
+/* Ab hum kya krege en items pr hover effect dege mtlb cursor lekr jaaye to color change ho to
+uske leye kya krege neche dekhe.*/
+.nav3 ul li a:hover{
+    color: var(--primary);
+}
+/* Ab icon ke leye style krege */
+.nav3 ul li i{
+    color: var(--primary);
+    margin: 0px 5px;
+}
+/* Yha menu ki ul ko style krege neche dekhe. */
+.nav3 ul ul{
+    position:absolute;
+    top: 70px;
+    left: 0px;
+    display: none; /*Yha ki display none menu ki leye.*/
+}
+/* Ab jo menu ki ul uske li hai uska bg color set krege neche dekhe kaise. */
+.nav3 ul ul li{
+    background-color: white;
+    border-bottom: 1px solid var(--primary);
+}
+/* Ab kya problem ho rhe hai ki ye jo menu hai wo regular dekh rha hai bt hum kya chahte hai jb
+humara cursor toys pr jaaye tbhi ho only show to uske leye sbse phle to hum uper jo humare menu
+vaale ul hai toys ki under usme jaakr display none krege uper dekhe. */
+/* Or jaise es pr cursor lekr jaaye to wo menu show uske leye kya krege neche dekhe. */
+.nav3 ul li:hover>ul{
+    display: block;
+}
+
+
+
+
+/* Ab hum kya krege section 1 ki jo featured hai uske ki leye style krege Neche dekhe kaise. */
+.featured{
+    width: 100%;
+    height: 60vh;
+    background:linear-gradient(to right,rgba(0,0,0,1),rgba(255,255,255,0.2)), url(../img/2.jpg);
+    background-size: cover;
+    background-position:center;
+    position: relative;
+
+}
+/* Ab hum featured ki under jo button or text hai usko style krege neche dekhe. */
+.featured-text{
+    max-width: 500px;
+    position: absolute;
+    top:50%;
+    left:10%;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    font-family: 'Akaya Kanadaka', cursive;
+}
+/* Ab hum es button ko style krege coming soon vaala jo hai neche dekhe kaise krege. */
+.featured-text button{
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: var(--secondary);
+    margin: 20px 0px;
+    color: white;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* Ab hum section 2 ki latest jo hai uske leye style krege neche dekhe.*/
+/* Hum latest ki leye style krege. */
+.latest{
+    padding: 50px 100px;
+
+}
+/* Ab hum kya krege jo humara product intro hai usko style krege. */
+.product-intro{
+    text-align: center;
+}
+/* Ab hum product-intro ki under jo h1 hai uske leye style krege. */
+.product-intro h1{
+    color: var(--primary);
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+/* Ab hum kya krege jo product-intro hai uske under jo h1 hai uske under jo span hai uske leye 
+style krege. */
+.product-intro h1 span{
+    color: var(--secondary);
+}
+/* Ab jo humare product-intro hai uske under jo p hai mtlb paragraph usko style krege. */
+.product-intro p{
+    color: grey;
+    margin: 15px 0px;
+}
+
+
+
+/* Ab hum kya krege card container vaale class hai uske leye kaam krege neche dekhe. */
+.card-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin: 4rem 0;
+}
+/* Bt fr bhi jo humare card hai wo ache se nhi aarhe hai uske leye kya krege hum.Neche dekhe. */
+/* jo humare card container ki under card hai wo style krege flex basis set krege*/
+.card-container .card{
+    flex-basis: 20%;
+    padding: 0.8rem;
+    position: relative;
+    text-align: center;
+}
+/* Ab jo humare card hai unko style krege neche dekhe. */
+.card img{
+    width: 100%;
+    height: 200px;
+    transition: 0.5s ease-in-out;
+    
+}
+
+/* Ab hum kya krege jo card ki under icon hai star vaale unko style krege neche dekhe kaise krege. */
+.card i{
+    color: goldenrod;
+    margin: 10px 0px;
+}
+/* Ab humare paas jo card ki under button hai usko style krege neche dekhe kaise. */
+.card button{
+    color: white;
+    background-color: var(--secondary);
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    padding: 5px 20px;
+    border-radius: 6px;
+}
+/* Ab kya krege jo humare card hai usme jo h1 mein lekha hua hai or jo image hai jb us pr cursor 
+jaaye to hover ho uske leye neche krte hai dekhe. */
+.card:hover img, .card:hover h1{
+    width: 80%;
+    /* height: 80%; */
+    color: var(--primary);
+}
+.card::before{
+    content: "20% off";
+    width: 25%;
+    height: 25px;
+    line-height: 25px;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--primary);
+    padding: 0px 4px;
+    transform: rotate(-20deg);
+    border-radius: 6px;
+
+}
+
+
+
+
+
+/*Humara jo second setions tha popular brnads vaala uske leye style nhi krna pda bcoz humare first
+section vaale style hi work kr gye kyu ki uske or second vaale ki same class etc the to es vjha se. */
+
+
+
+/* Ab hum kya krege 3rd section vaale ki leye style krege neche dekhe. */
+/* trends class ki leye style kruga neche dekhe. */
+.trends{
+    padding: 50px 100px;
+    /* background-color: rgba(0, 0, 0, 0.09); */
+}
+
+
+/* jo humne vha se copy kiya hai usko yha pr copy kr dege. */
+/* or saath mein kya krege es style ko ye jo class name hai swiper kr ki enko sbko trends ki under
+laayege bcoz jo humare ye swiper ko jo html code hai wo humne trends vaale class ki under hi to save
+ki hai to yha bhi vhe krege neche dekhe. */
+.trends .swiper {
+    width: 100%;
+   padding: 50px;
+}
+
+.trends .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
+
+.trends .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+/* Ab hum footer ko style krege neche dekhe kaise. */
+footer{
+    background-color: var(--secondary);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 2rem;
+}
+/* Ab kya krege jo footer ki under jo div hai unko style krege. */
+footer div{
+    flex-basis: 30%;
+}
+footer h1{
+    letter-spacing: 0.5rem;
+    color: var(--primary);
+}
+footer h1 span{
+    color: black;
+}
+footer p{
+    font-size: 1rem;
+}
+footer i{
+    margin: 0px 5px;
+}
+
+
+
+
+
+
+
+

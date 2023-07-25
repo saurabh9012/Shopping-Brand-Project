@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aapki Apne Dukan</title>  <!--Es line mein humne title deya hai.-->
+    <!--Or fr main css file ko add kr rha hu Neche dekhe kaise ki.-->
+    <link rel="stylesheet" href="css/style.css"> 
+
+    <!-- Ab Hum external files ko add krte hai -->
+    <!-- Maine sbse phle google font ki file ko add kiya hai mtlb uske path ko -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Ab ye dusre font ki link file mein hi -->
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+    <!-- Ab fr maine ye jo link hai neche ye humare icon ki leye esko humne font awesome mein jaakr
+    fr w3 school se leya hai ese jo hum icon use kr rhe hai neche fa fa-facebook vaale uske leye
+    hai ye. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Yha pr main slider vaala jo link hai jo maine swiper.js se copy ki hai wo kruga.Neche dekhe. -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+
+
+</head>
+<body>
+    <!-- Ab hum apna header bnayege esliye neche header tag kiya hai. -->
+    <header>
+        <!-- Ab humare paas aate hai first vaale navigation jiske hume 2 seaction create krne hai
+        ek right vaala ek left vaala Neche dekhe kya krege uske leye. -->
+        <nav class="nav1">
+            <!-- Ab eske under 2 div le rha hu ek right vaale or ek left vaale neche dekhe. -->
+            <div class="left">
+                <!-- Humne heading ko span tag mein deya neche dekhe. -->
+                <span>Welcome to my E-shop</span> <!--Humne span ka use esliye kiya hai kyu ki jo
+                humare span hai uske vjha se jo ye heading hai only utne jgha lega jitna usse 
+                jarurat hai. -->
+                <!-- or ye jo neche link hai enko maine anchor tag se kiya hai jaise krte hai. -->
+                <a href="#">Register</a> OR
+                <a href="#">Login</a> 
+            </div>
+
+            <!-- Ye right side mein jo icons aarhe hai whatsapp facebook etc vaale unki leye.-->
+            <div class="right">
+                <!-- Ye ek code hote hai facebook whatsapp etc ki leye neche jo deye hai. -->
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-whatsapp"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-pinterest"></i>
+           </div>
+        </nav>
+        <!--Nav1 yha pr end Hua.-->
+
+
+
+    <!-- Ab yha se neche krege hum nav2 ki leye Kaam neche dekhe. -->
+        <!-- Maine nav2 name ki ek div uske class bnaye neche dekhe. -->
+        <nav class="nav2">
+            <!-- fr maine 3 div bnaye. -->
+            <!-- first div nav2-left vaale jisme mobile number or email rhega. -->
+            <div class="nav2-left">
+                <i class="fa fa-mobile"></i> +91 8755996196
+                <i class="fa fa-envelope"></i> aapkiapnedukan@gmail.com
+            </div>
+            <!-- Ab jo 2nd div bnanega wo logo ki leye hoga center div. -->
+            <div class="nav2-center">
+                <h1>Aapki Apne <span>Dukan</span></h1>
+                <p>Everything for You...</p>
+            </div>
+            <!-- Ab bnayege 3rd div jisme hoga contact details. -->
+            <div class="nav2-right">
+                <i class="fa fa-address-book"></i> Contact Us
+            </div>
+        </nav>
+        <!--Nav2 yha pr end Hua.-->
+
+
+
+
+    <!-- Ab yha se neche krege hum nav3 ki leye Kaam neche dekhe. -->
+        <nav class="nav3">
+            <!-- Ab hum eske under unorder list bnayege wo ul se bnate hai.fr uske under dege items. -->
+            <ul>
+                <!-- Hume kya kiya hai ek list items bnaye hai fr uske under links bnaye hai jo hum a href 
+                se bnate hai fr uske under i tage ka use kiya icon bnane ki leye fr unka text name deya hai
+                jaise Home etc.  -->
+                <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#"><i class="fa fa-user"></i>Boy/Girl</a></li>
+                <li><a href="#"><i class="fa fa-users"></i>Accessories</a></li>
+            
+                <!-- ye toys vaale ki leye hai yha se -->
+                <li><a href="#"><i class="fa fa-anchor"></i>Toys 
+                    <!-- ye jo toys ki saath hi jo kiya hai ye icon ki leye dropdown ki icon ki leye -->
+                    <i class="fa fa-caret-down"></i></a>
+                    <!-- Ab hume dropdown lgana hai Toys ki leye Neche dekhe. -->
+                    <!-- phle ul bnaya fr li bnaya uske baad i use kiya icon ki leye fr text deya. -->
+                    <ul>
+                        <li><a href="#"><i class="fa fa-clipboard"></i>Wooden</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i>Plastic</a></li>
+                        <li><a href="#"><i class="fa fa-gavel"></i>Iron</a></li>
+                    </ul>
+                </li> 
+                <!-- Yha tk. -->
+
+                <li><a href="#"><i class="fa fa-calendar-check-o"></i>Special Offers</a></li>
+                <li><a href="#"><i class="fa fa-search"></i>Find</a></li>
+            </ul>
+        </nav>
+        <!--Nav3 yha pr end Hua.-->
+        
+
+
+
+        
+        
+        <!-- Ab Hum ek image lgayege neche dekhe or usko hum featured section bolege. -->
+        <!-- Yha pr hum ek section create krege or us section ki jo class hai uska name featured hoga -->
+        <section class="featured">
+            <!-- Ab ek div bnayege uske bhi ek class hogi. -->
+            <div class="featured-text">
+                <!-- Ab es div ki under hum ek button dege or ek heading hogi. -->
+                <button>Coming Soon</button>
+                <h2>Our new designs</h2>
+            </div>
+        </section>
+        <!-- yha pr humara ye vaala section end ho rha hai. -->
+
+    </header>
+
+
+
+
+    <!-- Ab jo section bnayege wo hum header ki baad bnayege Neche dekhe kaise. -->
+    <!-- Humne ek section bnaya hai or uske class de hai latest. -->   
+    <section class="latest">
+        <!-- Ab eske under ek div bnayege.Neche dekhe -->
+        <div class="product-intro">
+            <h1>New <span>Arrivals</span></h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, dignissimos?</p>
+        </div>
+
+
+        
+        <!-- Ab hum kya krege yha se neche card ki leye kaam krege uske Neche dekhe kaise. -->
+        <!-- To sbse phle kya krege ye jo card hai na hum enko ek container mein rkehege. -->
+        <div class="card-container">
+             <!-- Ab hum ek or div create krege jiske class hogi card. -->
+            <div class="card">
+                <!-- Ab hume ek image lgane hai uske leye ek div or create krte hai. -->
+                <div>
+                    <!-- or es div ki under image lgane hai Neche dekhe kaise. -->
+                    <img src="img/5.branded shoes.jpg" alt="">
+                </div>
+            <!-- Ab hum ek hading create krege jisme ek text hoga neche dekhe. -->
+            <h1>Branded Shoes</h1>
+            <!-- fb hume icon lgane hai star vaale to uske leye humne i tag ka use krege neche dekhe. -->
+            <span>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </span>
+            <!-- fr hum ek paragraph dege jisme price hoga neche dekhe kaise. -->
+            <p>$500.00</p>
+            <!-- fr hum ek button create krege jo humare add to cart ka kaam krega neche dekhe kaise. -->
+            <button>Add to cart</button>
+            </div>
+
+
+
+        <!-- Ab hum aise hi same 3 card or bnayege neche dekhe kaise. -->
+            <div class="card">
+                <!-- Ab hume ek image lgane hai uske leye ek div or create krte hai. -->
+                <div>
+                    <img src="img/6.branded shoes.jpg" alt="">
+                </div>
+            <!-- Ab hum ek hading create krege jisme ek text hoga neche dekhe. -->
+            <h1>Branded Shoes</h1>
+            <!-- fb hume icon lgane hai star vaale to uske leye humne i tag ka use krege neche dekhe. -->
+            <span>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </span>
+            <!-- fr hum ek paragraph dege jisme price hoga neche dekhe kaise. -->
+            <p>$500.00</p>
+            <!-- fr hum ek button create krege jo humare add to cart ka kaam krega neche dekhe kaise. -->
+            <button>Add to cart</button>
+            </div>
+
+
+
+            <div class="card">
+            <!-- Ab hume ek image lgane hai uske leye ek div or create krte hai. -->
+                <div>
+                    <img src="img/7.branded shoes.jpg" alt="">
+                </div>
+            <!-- Ab hum ek hading create krege jisme ek text hoga neche dekhe. -->
+            <h1>Branded Shoes</h1>
+            <!-- fb hume icon lgane hai star vaale to uske leye humne i tag ka use krege neche dekhe. -->
+            <span>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+            </span>
+            <!-- fr hum ek paragraph dege jisme price hoga neche dekhe kaise. -->
+            <p>$500.00</p>
+            <!-- fr hum ek button create krege jo humare add to cart ka kaam krega neche dekhe kaise. -->
+            <button>Add to cart</button>
+            </div>
+
+
+
+
+
+            <div class="card">
+            <!-- Ab hume ek image lgane hai uske leye ek div or create krte hai. -->
+                <div>
+                    <img src="img/8.branded shoes.jpg" alt="">
+                </div>
+            <!-- Ab hum ek hading create krege jisme ek text hoga neche dekhe. -->
+            <h1>Branded Shoes</h1>
+            <!-- fb hume icon lgane hai star vaale to uske leye humne i tag ka use krege neche dekhe. -->
+            <span>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </span>
+            <!-- fr hum ek paragraph dege jisme price hoga neche dekhe kaise. -->
+            <p>$500.00</p>
+            <!-- fr hum ek button create krege jo humare add to cart ka kaam krega neche dekhe kaise. -->
+            <button>Add to cart</button>
+            </div>
+        </div>
+
+
+
+
+        <!-- Ab hum kya krege jaise card-container uper bnaya hai aise or bnayege neche dekhe. -->
+        <div class="card-container">
+            <!-- Ab hum ek or div create krege jiske class hogi card. -->
+           <div class="card">
+               <!-- Ab hume ek image lgane hai uske leye ek div or create krte hai. -->
+               <div>
+                   <!-- or es div ki under image lgane hai Neche dekhe kaise. -->
+                   <img src="img/5.branded shoes.jpg" alt="">
+               </div>
+           <!-- Ab hum ek hading create krege jisme ek text hoga neche dekhe. -->
+           <h1>Branded Shoes</h1>
+           <!-- fb hume icon lgane hai star vaale to uske leye humne i tag ka use krege neche dekhe. -->
+           <span>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+           </span>
+           <!-- fr hum ek paragraph dege jisme price hoga neche dekhe kaise. -->
+           <p>$500.00</p>
+           <!-- fr hum ek button create krege jo humare add to cart ka kaam krega neche dekhe kaise. -->
+           <button>Add to cart</button>
+           </div>
+
+
+
+       <!-- Ab hum aise hi same 3 card or bnayege neche dekhe kaise. -->
+           <div class="card">
+               <!-- Ab hume ek image lgane hai uske leye ek div or create krte hai. -->
+               <div>
+                   <img src="img/6.branded shoes.jpg" alt="">
+               </div>
+           <!-- Ab hum ek hading create krege jisme ek text hoga neche dekhe. -->
+           <h1>Branded Shoes</h1>
+           <!-- fb hume icon lgane hai star vaale to uske leye humne i tag ka use krege neche dekhe. -->
+           <span>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+           </span>
+           <!-- fr hum ek paragraph dege jisme price hoga neche dekhe kaise. -->
+           <p>$500.00</p>
+           <!-- fr hum ek button create krege jo humare add to cart ka kaam krega neche dekhe kaise. -->
+           <button>Add to cart</button>
+           </div>
+
+
+
+           <div class="card">
+           <!-- Ab hume ek image lgane hai uske leye ek div or create krte hai. -->
+               <div>
+                   <img src="img/7.branded shoes.jpg" alt="">
+               </div>
+           <!-- Ab hum ek hading create krege jisme ek text hoga neche dekhe. -->
+           <h1>Branded Shoes</h1>
+           <!-- fb hume icon lgane hai star vaale to uske leye humne i tag ka use krege neche dekhe. -->
+           <span>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+           </span>
+           <!-- fr hum ek paragraph dege jisme price hoga neche dekhe kaise. -->
+           <p>$500.00</p>
+           <!-- fr hum ek button create krege jo humare add to cart ka kaam krega neche dekhe kaise. -->
+           <button>Add to cart</button>
+           </div>
+
+
+
+
+
+           <div class="card">
+           <!-- Ab hume ek image lgane hai uske leye ek div or create krte hai. -->
+               <div>
+                   <img src="img/8.branded shoes.jpg" alt="">
+               </div>
+           <!-- Ab hum ek hading create krege jisme ek text hoga neche dekhe. -->
+           <h1>Branded Shoes</h1>
+           <!-- fb hume icon lgane hai star vaale to uske leye humne i tag ka use krege neche dekhe. -->
+           <span>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+           </span>
+           <!-- fr hum ek paragraph dege jisme price hoga neche dekhe kaise. -->
+           <p>$500.00</p>
+           <!-- fr hum ek button create krege jo humare add to cart ka kaam krega neche dekhe kaise. -->
+           <button>Add to cart</button>
+           </div>
+       </div>
+
+    </section>
+    <!-- Ye vaala section complete hua yha pr. -->
+
+
+
+
+
+
+    <!-- Ab hum kya krege ek or section bnayege jiska name hai popular product -->
+    <section class="latest">
+        <!-- Ab eske under ek div bnayege.Neche dekhe -->
+        <div class="product-intro">
+            <h1>Popular <span>Products</span></h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, dignissimos?</p>
+        </div>
+
+        
+        <!-- Ab hum kya krege yha se neche card ki leye kaam krege uske Neche dekhe kaise. -->
+        <!-- To sbse phle kya krege ye jo card hai na hum enko ek container mein rkehege. -->
+        <div class="card-container">
+             <!-- Ab hum ek or div create krege jiske class hogi card. -->
+            <div class="card">
+                <!-- Ab hume ek image lgane hai uske leye ek div or create krte hai. -->
+                <div>
+                    <!-- or es div ki under image lgane hai Neche dekhe kaise. -->
+                    <img src="img/9.popular products.jpg" alt="">
+                </div>
+            <!-- Ab hum ek hading create krege jisme ek text hoga neche dekhe. -->
+            <h1>Branded Jacket</h1>
+            <!-- fb hume icon lgane hai star vaale to uske leye humne i tag ka use krege neche dekhe. -->
+            <span>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </span>
+            <!-- fr hum ek paragraph dege jisme price hoga neche dekhe kaise. -->
+            <p>$500.00</p>
+            <!-- fr hum ek button create krege jo humare add to cart ka kaam krega neche dekhe kaise. -->
+            <button>Add to cart</button>
+            </div>
+
+
+
+        <!-- Ab hum aise hi same 3 card or bnayege neche dekhe kaise. -->
+            <div class="card">
+                <!-- Ab hume ek image lgane hai uske leye ek div or create krte hai. -->
+                <div>
+                    <img src="img/10.popular products.jpg" alt="">
+                </div>
+            <!-- Ab hum ek hading create krege jisme ek text hoga neche dekhe. -->
+            <h1>Branded Shirt</h1>
+            <!-- fb hume icon lgane hai star vaale to uske leye humne i tag ka use krege neche dekhe. -->
+            <span>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </span>
+            <!-- fr hum ek paragraph dege jisme price hoga neche dekhe kaise. -->
+            <p>$500.00</p>
+            <!-- fr hum ek button create krege jo humare add to cart ka kaam krega neche dekhe kaise. -->
+            <button>Add to cart</button>
+            </div>
+
+
+
+            <div class="card">
+            <!-- Ab hume ek image lgane hai uske leye ek div or create krte hai. -->
+                <div>
+                    <img src="img/11.popular products.jpg" alt="">
+                </div>
+            <!-- Ab hum ek hading create krege jisme ek text hoga neche dekhe. -->
+            <h1>Branded Makeup</h1>
+            <!-- fb hume icon lgane hai star vaale to uske leye humne i tag ka use krege neche dekhe. -->
+            <span>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+            </span>
+            <!-- fr hum ek paragraph dege jisme price hoga neche dekhe kaise. -->
+            <p>$500.00</p>
+            <!-- fr hum ek button create krege jo humare add to cart ka kaam krega neche dekhe kaise. -->
+            <button>Add to cart</button>
+            </div>
+
+
+
+
+
+            <div class="card">
+            <!-- Ab hume ek image lgane hai uske leye ek div or create krte hai. -->
+                <div>
+                    <img src="img/12.popular products.jpg" alt="">
+                </div>
+            <!-- Ab hum ek hading create krege jisme ek text hoga neche dekhe. -->
+            <h1>Branded Baby Clothes</h1>
+            <!-- fb hume icon lgane hai star vaale to uske leye humne i tag ka use krege neche dekhe. -->
+            <span>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </span>
+            <!-- fr hum ek paragraph dege jisme price hoga neche dekhe kaise. -->
+            <p>$500.00</p>
+            <!-- fr hum ek button create krege jo humare add to cart ka kaam krega neche dekhe kaise. -->
+            <button>Add to cart</button>
+            </div>
+        </div>
+    </section>
+    <!-- Yha pr humara second vaala section complete hogya hai popular products vaala.-->
+
+
+
+
+
+
+    <!-- Ab hum 3rd section bnayege jo ek 3d slider bhi bol sekte hai jiska name hoga top brand -->
+    <section class="trends">
+      <!-- Ab eske under ek div bnayege.Neche dekhe -->
+        <div class="product-intro">
+            <h1>Top<span>Trends</span></h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, dignissimos?</p>
+        </div> 
+        
+        
+        <!--Yha pr save kr rha hu us code ko jo swiper vaale website se aaye hai.-->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/13.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/14.trends.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/15.trends.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/13.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+      
+
+
+
+    <!-- Ab hum kya krege ek slider lgayege jo hum google se lekr aarhe hai jiske leye hum
+    google pr search krege swiper.js fr eske website open hojayega fr kya krege usme (Get Started)
+    pr click krege fr Hume ek Use swiper from CDN name se ek link vaale line melege usko copy krege.
+    fr usko hum html vaale file mein save jeha pr or baaki link save kiye hai vha save kr lege uper. 
+
+    or ek file or hum copy krege vha se hi wo hai script file uske sbse neche save kr lege.
+    ye save krne ki baad hum Demo mein jaayege or fr usse ki under effect overflow mein jaayege.
+    fr uske under core pr click krege to ek website open hogi.usme se hum style vaale code ko 
+    copy krege.or usko css vaale file mein jaakr save kr dege es project mein hum trends ki neche
+    save kr rhe hai.
+    fr kya krege fr hum se code lege div vaala usko copy kr ki laakr html vaale file mein jo 3rd
+    section bnaya hai usme save kr dege.
+    
+    fr eske baad kya kruga main vha se website complete script ko copy kr ki laauga fr yha save
+    kr duga dekhe neche.  -->
+    </section>
+
+
+    <!-- Ab hum kaam krege footer ki leye neche dekhe. -->
+    <footer>
+        <!-- Hume 3 div chahye dekhte kya kya krege usme. -->
+        <!-- first div mein name duga neche dekhe kaise. -->
+        <div>
+            <!-- esme ek h1 or ek span duga usme lekhuga neche dekhe. -->
+            <h1>Aapki Apne <span>Dukan</span></h1> <br>
+            <p>Everything for You</p>
+        </div>
+
+        <!-- second div mein main icon duga neche dekhe. -->
+        <div>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-whatsapp"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-pinterest"></i>
+        </div>
+
+        <!-- erd div mein main kya kruga usme ek pragraph duga copyright ka neche dekhe kaise. -->
+        <div>
+            <p>
+                @2022 copyright All Right Reseverd.
+            </p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <!-- es script file ko yha save krege. -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    
+    <!-- ye neche jo copy kiya hai ye all script us website se hi laaya hu jo open hue the demo
+    ki under. -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 1200,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      </script>
+
+
+
+
+
+</body>
+</html>
